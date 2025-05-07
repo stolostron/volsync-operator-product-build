@@ -8,8 +8,15 @@ metadata:
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
-    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
-      == "main"
+    # when adding filter for directory use "directory/***".pathChanged()
+    # when adding filter for git submodule use "submodule".pathChanged()
+    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "main" &&
+      (".tekton/volsync-0-13-pull-request.yaml".pathChanged() ||
+      ".tekton/volsync-0-13-push.yaml".pathChanged() ||
+      "Dockerfile.rhtap".pathChanged() ||
+      "volsync".pathChanged() ||
+      "rpms.in.yaml".pathChanged() ||
+      "rpms.lock.yaml".pathChanged())
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: volsync-0-13
@@ -19,6 +26,19 @@ metadata:
   namespace: volsync-tenant
 spec:
   params:
+  - name: hermetic
+    value: "true"
+  - name: prefetch-input
+    value:
+    - {"type": "gomod", "path": "volsync/"}
+    - {"type": "gomod", "path": "volsync/mover-restic/restic"}
+    - {"type": "gomod", "path": "volsync/mover-restic/minio-go"}
+    - {"type": "gomod", "path": "rclone/"}
+    - {"type": "gomod", "path": "syncthing/"}
+    - {"type": "gomod", "path": "diskrsync/"}
+    - {"type": "rpm", "path": "."}
+  - name: build-source-image
+    value: "true"
   - name: git-url
     value: '{{source_url}}'
   - name: revision
@@ -190,6 +210,8 @@ spec:
         value: $(params.output-image).prefetch
       - name: ociArtifactExpiresAfter
         value: $(params.image-expires-after)
+      - name: dev-package-managers
+        value: "true"
       runAfter:
       - clone-repository
       taskRef:
@@ -547,6 +569,8 @@ spec:
       params:
       - name: IMAGE
         value: $(tasks.build-image-index.results.IMAGE_URL)
+      - name: ADDITIONAL_TAGS
+        value: ["pull-request-{{pull_request_number}}"]
       runAfter:
       - build-image-index
       taskRef:
