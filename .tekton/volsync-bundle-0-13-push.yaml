@@ -31,8 +31,8 @@ spec:
     value:
     - {"type": "rpm", "path": "."}
     - {"type": "pip", "path": "."}
-  #- name: build-source-image
-  #  value: "true"
+  - name: build-source-image
+    value: "true"
   - name: git-url
     value: '{{source_url}}'
   - name: revision
