@@ -88,13 +88,13 @@ arches:
     name: jq
     evr: 1.6-15.el9
     sourcerpm: jq-1.6-15.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-570.16.1.el9_6.aarch64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-570.17.1.el9_6.aarch64.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
-    size: 3638573
-    checksum: sha256:de9a2be5034d06e67023c057bd534d9d771711b9c9f323c96cce8e17a4a6e8a7
+    size: 3642217
+    checksum: sha256:20559facc5fadbe8e756240e4afc65252ce3fad4cd9b06d0fea5b594ca76d427
     name: kernel-headers
-    evr: 5.14.0-570.16.1.el9_6
-    sourcerpm: kernel-5.14.0-570.16.1.el9_6.src.rpm
+    evr: 5.14.0-570.17.1.el9_6
+    sourcerpm: kernel-5.14.0-570.17.1.el9_6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-srpm-macros-1.0-13.el9.noarch.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
     size: 17792
@@ -2325,13 +2325,13 @@ arches:
     name: jq
     evr: 1.6-15.el9
     sourcerpm: jq-1.6-15.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-570.16.1.el9_6.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-570.17.1.el9_6.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
-    size: 3660289
-    checksum: sha256:976724c2749173f6301ea5f562ca7a002eb611553b4d0eefba4b38d0395064ac
+    size: 3663917
+    checksum: sha256:9090a20dcbddda78f2a23ba9fa3becb7c2a40f276902b6e84ab203acbcdb6420
     name: kernel-headers
-    evr: 5.14.0-570.16.1.el9_6
-    sourcerpm: kernel-5.14.0-570.16.1.el9_6.src.rpm
+    evr: 5.14.0-570.17.1.el9_6
+    sourcerpm: kernel-5.14.0-570.17.1.el9_6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-srpm-macros-1.0-13.el9.noarch.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
     size: 17792
@@ -4576,13 +4576,13 @@ arches:
     name: jq
     evr: 1.6-15.el9
     sourcerpm: jq-1.6-15.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-570.16.1.el9_6.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-570.17.1.el9_6.s390x.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
-    size: 3668285
-    checksum: sha256:65061904e3461ca330a6e4f1322d153348727707a8278c124b5da25afa5ac176
+    size: 3671885
+    checksum: sha256:588834117164357cde3790541f872931129785dcc44763fbf8cc7a42583cda90
     name: kernel-headers
-    evr: 5.14.0-570.16.1.el9_6
-    sourcerpm: kernel-5.14.0-570.16.1.el9_6.src.rpm
+    evr: 5.14.0-570.17.1.el9_6
+    sourcerpm: kernel-5.14.0-570.17.1.el9_6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-srpm-macros-1.0-13.el9.noarch.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
     size: 17792
@@ -6820,13 +6820,13 @@ arches:
     name: jq
     evr: 1.6-15.el9
     sourcerpm: jq-1.6-15.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-570.16.1.el9_6.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-570.17.1.el9_6.x86_64.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
-    size: 3676917
-    checksum: sha256:c1d00377558618566384ca3a4decd24b32ca1138292e07110c80539cb4056b61
+    size: 3680573
+    checksum: sha256:03dcb738b60220f6576812e7d4c7afdeb732b76d5d48b04c0603cce638b4ee9e
     name: kernel-headers
-    evr: 5.14.0-570.16.1.el9_6
-    sourcerpm: kernel-5.14.0-570.16.1.el9_6.src.rpm
+    evr: 5.14.0-570.17.1.el9_6
+    sourcerpm: kernel-5.14.0-570.17.1.el9_6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-srpm-macros-1.0-13.el9.noarch.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
     size: 17792
