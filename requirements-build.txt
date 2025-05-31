@@ -4,7 +4,7 @@
 #
 #    pip-compile --allow-unsafe --generate-hashes requirements-build.in
 #
-ruamel-yaml==0.17.9 \
+ruamel-yaml==0.18.12 \
     --hash=sha256:374373b4743aee9f6d9f40bea600fe020a7ac7ae36b838b4a6a93f72b584a14c \
     --hash=sha256:8873a6f5516e0d848c92418b0b006519c0566b6cd0dcee7deb9bf399e2bd204f
     # via -r requirements-build.in
@@ -34,3 +34,6 @@ setuptools==80.3.1 \
     --hash=sha256:31e2c58dbb67c99c289f51c16d899afedae292b978f8051efaf6262d8212f927 \
     --hash=sha256:ea8e00d7992054c4c592aeb892f6ad51fe1b4d90cc6947cc45c45717c40ec537
     # via -r requirements-build.in
+ruamel.yaml==0.18.12 \
+    --hash=sha256:5a38fd5ce39d223bebb9e3a6779e86b9427a03fb0bf9f270060f8b149cffe5e2 \
+    --hash=sha256:790ba4c48b6a6e6b12b532a7308779eb12d2aaab3a80fdb8389216f28ea2b287
