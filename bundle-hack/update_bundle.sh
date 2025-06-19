@@ -36,6 +36,15 @@ fi
 # Update img reference to final registry.redhat.io location
 export VOLSYNC_IMAGE_PULLSPEC="registry.redhat.io/rhacm2/volsync-rhel9@${STAGE_VOLSYNC_IMAGE_PULLSPEC##*@}"
 
+# Update rbac proxy image link to remove the tag - rhtap-buildargs has pinned digest with tag so renovate can update,
+# But we don't want the tag in the bundle references
+export OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC="${OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC/:*@sha256/@sha256}"
+
+echo "### Updated image refs: ###"
+echo " VOLSYNC_IMAGE_PULLSPEC: ${VOLSYNC_IMAGE_PULLSPEC}"
+echo " OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC: ${OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC}"
+echo ""
+
 if [ ! -f "${CSV_FILE}" ]; then
   echo "CSV file not found, the version or name might have changed on us!"
   exit 5
