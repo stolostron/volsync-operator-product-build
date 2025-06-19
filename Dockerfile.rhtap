@@ -266,7 +266,6 @@ LABEL com.redhat.component="volsync-container" \
       maintainer="['acm-component-maintainers@redhat.com']" \
       description="volsync" \
       vendor="Red Hat, Inc." \
-      #TODO: Should these be set here?
       url="https://github.com/stolostron/volsync-operator-product-build" \
       release="0" \
       distribution-scope="public"
