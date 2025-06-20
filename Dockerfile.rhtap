@@ -270,6 +270,9 @@ LABEL com.redhat.component="volsync-container" \
       release="0" \
       distribution-scope="public"
 
+# License
+RUN mkdir licenses/
+COPY volsync/LICENSE licenses/
 
 # uid/gid: nobody/nobody
 USER 65534:65534
