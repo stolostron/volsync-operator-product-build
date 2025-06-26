@@ -59,7 +59,6 @@ ENV GOARCH=${TARGETARCH}
 ENV GOEXPERIMENT=strictfipsruntime
 ENV BUILD_TAGS="strictfipsruntime"
 
-
 ######################################################################
 # Build the manager binary
 FROM golang-builder AS manager-builder
