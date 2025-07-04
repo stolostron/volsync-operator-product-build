@@ -23,14 +23,15 @@ COPY go.sum go.sum
 RUN go mod download
 
 # Copy the go source
-COPY cmd/ cmd/
+COPY *.go ./
 COPY api/ api/
-COPY internal/ internal/
+COPY controllers/ controllers/
+COPY config/openshift config/openshift
 
 # Build
 ARG version_arg="(unknown)"
 ARG tags_arg=""
-RUN go build -a -o manager -ldflags "-X=main.volsyncVersion=${version_arg}" -tags "${tags_arg}" ./cmd/...
+RUN go build -a -o manager -ldflags "-X=main.volsyncVersion=${version_arg}" -tags "${tags_arg}" .
 
 
 ######################################################################
@@ -65,8 +66,8 @@ RUN go run build.go --enable-cgo
 # Build syncthing
 FROM golang-builder AS syncthing-builder
 
-ARG SYNCTHING_VERSION="v1.29.7"
-ARG SYNCTHING_GIT_HASH="40660c5fb70556e9b1529de751de140c3142ade0"
+ARG SYNCTHING_VERSION="v1.29.2"
+ARG SYNCTHING_GIT_HASH="516f3e29e8cc7091ea6271715308caea0fcc0778"
 
 RUN git clone --depth 1 -b ${SYNCTHING_VERSION} https://github.com/syncthing/syncthing.git
 WORKDIR /workspace/syncthing

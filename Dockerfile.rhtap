@@ -69,14 +69,15 @@ COPY volsync/go.sum go.sum
 RUN go mod download
 
 # Copy the go source
-COPY volsync/cmd/ cmd/
+COPY volsync/*.go ./
 COPY volsync/api/ api/
-COPY volsync/internal/ internal/
+COPY volsync/controllers/ controllers/
+COPY volsync/config/openshift config/openshift
 
 # Build
 ARG ARG_VERSION="(unknown)"
 ARG tags_arg=${BUILD_TAGS}
-RUN export VOLSYNC_BUILD_VERSION="v${ARG_VERSION}-$(cat /tmp/volsync-commit.txt)"; go build -a -o manager -ldflags "-X=main.volsyncVersion=${VOLSYNC_BUILD_VERSION}" -tags "${tags_arg}" ./cmd/...
+RUN export VOLSYNC_BUILD_VERSION="v${ARG_VERSION}-$(cat /tmp/volsync-commit.txt)"; go build -a -o manager -ldflags "-X=main.volsyncVersion=${VOLSYNC_BUILD_VERSION}" -tags "${tags_arg}" .
 
 # Verify that FIPS crypto libs are accessible
 RUN nm manager | grep -q "goboringcrypto\|golang-fips"
