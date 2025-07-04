@@ -4,6 +4,7 @@
   ],
   "baseBranches": [
     "main",
+    "release-0.12",
     "release-0.13"
   ],
   "updateNotScheduled": true,
