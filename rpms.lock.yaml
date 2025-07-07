@@ -2125,13 +2125,13 @@ arches:
     name: python3-pip-wheel
     evr: 21.3.1-1.el9
     sourcerpm: python-pip-21.3.1-1.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/p/python3-setuptools-wheel-53.0.0-13.el9.noarch.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/p/python3-setuptools-wheel-53.0.0-13.el9_6.1.noarch.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
-    size: 480100
-    checksum: sha256:daf18aa58dd3571cf4258a5a4f67410a1d30ab8c62cd64b2ea99eda5a7f618cf
+    size: 479114
+    checksum: sha256:99807cec6f3941b1ec963813a5eaf7cf7922690cda6b35cd0f1fe0a3bdc1459f
     name: python3-setuptools-wheel
-    evr: 53.0.0-13.el9
-    sourcerpm: python-setuptools-53.0.0-13.el9.src.rpm
+    evr: 53.0.0-13.el9_6.1
+    sourcerpm: python-setuptools-53.0.0-13.el9_6.1.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/r/rsync-3.2.5-3.el9.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
     size: 416293
@@ -8766,13 +8766,13 @@ arches:
     name: python3-pip-wheel
     evr: 21.3.1-1.el9
     sourcerpm: python-pip-21.3.1-1.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/p/python3-setuptools-wheel-53.0.0-13.el9.noarch.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/p/python3-setuptools-wheel-53.0.0-13.el9_6.1.noarch.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 480100
-    checksum: sha256:daf18aa58dd3571cf4258a5a4f67410a1d30ab8c62cd64b2ea99eda5a7f618cf
+    size: 479114
+    checksum: sha256:99807cec6f3941b1ec963813a5eaf7cf7922690cda6b35cd0f1fe0a3bdc1459f
     name: python3-setuptools-wheel
-    evr: 53.0.0-13.el9
-    sourcerpm: python-setuptools-53.0.0-13.el9.src.rpm
+    evr: 53.0.0-13.el9_6.1
+    sourcerpm: python-setuptools-53.0.0-13.el9_6.1.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/r/rsync-3.2.5-3.el9.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
     size: 421930
