@@ -87,6 +87,10 @@ RUN nm manager | grep -q "goboringcrypto\|golang-fips"
 FROM golang-builder AS rclone-builder
 
 COPY rclone/ rclone/
+COPY CVE-patches/ CVE-patches/
+
+RUN ./CVE-patches/patch.sh
+
 WORKDIR /workspace/rclone
 
 # Remove link flag that strips symbols so that we can verify crypto libs
