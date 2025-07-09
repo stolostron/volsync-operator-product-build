@@ -39,6 +39,7 @@ spec:
     - {"type": "gomod", "path": "rclone/"}
     - {"type": "gomod", "path": "syncthing/"}
     - {"type": "gomod", "path": "diskrsync/"}
+    - {"type": "gomod", "path": "CVE-patches/"}
     - {"type": "rpm", "path": "."}
   - name: build-args-file
     value: "rhtap-buildargs.conf"
