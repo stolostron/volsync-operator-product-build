@@ -3,7 +3,8 @@
   "baseBranches": [
     "main",
     "release-0.12",
-    "release-0.13"
+    "release-0.13",
+    "release-0.14"
   ],
   "updateNotScheduled": true,
   "ignorePaths": [
@@ -25,5 +26,18 @@
     "schedule": [
       "at any time"
     ]
-  }
+  },
+  "pinDigests": true,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["rhtap-buildargs.conf"],
+      "matchStrings": [
+        "ARG_OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC=(?<depName>[^<:]*?)(?::(?<currentValue>[^<]*?))?(?:@(?<currentDigest>sha256:[a-f0-9]+))"
+      ],
+      "autoReplaceStringTemplate": "ARG_OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC=\"{{{depName}}}:{{{newValue}}}@{{{newDigest}}}\"",
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    }
+  ]
 }
