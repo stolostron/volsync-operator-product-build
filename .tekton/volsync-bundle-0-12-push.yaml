@@ -9,7 +9,14 @@ metadata:
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     # when adding filter for directory use "directory/***".pathChanged()
     # when adding filter for git submodule use "submodule".pathChanged()
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "release-0.12" && (".tekton/volsync-bundle-0-12-pull-request.yaml".pathChanged() || ".tekton/volsync-bundle-0-12-push.yaml".pathChanged() || "bundle.Dockerfile.rhtap".pathChanged() || "bundle-hack/***".pathChanged() || "rhtap-buildargs.conf".pathChanged() || "rpms.in.yaml".pathChanged() || "rpms.lock.yaml".pathChanged())
+    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "release-0.12" &&
+      (".tekton/volsync-bundle-0-12-pull-request.yaml".pathChanged() ||
+       ".tekton/volsync-bundle-0-12-push.yaml".pathChanged() ||
+       "bundle.Dockerfile.rhtap".pathChanged() ||
+       "bundle-hack/***".pathChanged() ||
+       "rhtap-buildargs.conf".pathChanged() ||
+       "rpms.in.yaml".pathChanged() ||
+       "rpms.lock.yaml".pathChanged())
   creationTimestamp:
   labels:
     appstudio.openshift.io/application: volsync-0-12

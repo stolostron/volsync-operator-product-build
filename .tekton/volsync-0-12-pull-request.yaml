@@ -10,7 +10,16 @@ metadata:
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     # when adding filter for directory use "directory/***".pathChanged()
     # when adding filter for git submodule use "submodule".pathChanged()
-    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "release-0.12" && (".tekton/volsync-0-12-pull-request.yaml".pathChanged() || ".tekton/volsync-0-12-push.yaml".pathChanged() || "Dockerfile.rhtap".pathChanged() || "volsync".pathChanged() || "rclone".pathChanged() || "syncthing".pathChanged() || "diskrsync".pathChanged() || "rpms.in.yaml".pathChanged() || "rpms.lock.yaml".pathChanged())
+    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "release-0.12" &&
+     (".tekton/volsync-0-12-pull-request.yaml".pathChanged() ||
+      ".tekton/volsync-0-12-push.yaml".pathChanged() ||
+      "Dockerfile.rhtap".pathChanged() ||
+      "volsync".pathChanged() ||
+      "rclone".pathChanged() ||
+      "syncthing".pathChanged() ||
+      "diskrsync".pathChanged() ||
+      "rpms.in.yaml".pathChanged() ||
+      "rpms.lock.yaml".pathChanged())
   creationTimestamp:
   labels:
     appstudio.openshift.io/application: volsync-0-12
@@ -373,7 +382,12 @@ spec:
         operator: in
         values:
         - "false"
-    - name: ecosystem-cert-preflight-checks
+    - matrix:
+        params:
+        - name: platform
+          value:
+          - $(params.build-platforms)
+      name: ecosystem-cert-preflight-checks
       params:
       - name: image-url
         value: $(tasks.build-image-index.results.IMAGE_URL)
@@ -419,7 +433,12 @@ spec:
         operator: in
         values:
         - "false"
-    - name: clamav-scan
+    - matrix:
+        params:
+        - name: image-arch
+          value:
+          - $(params.build-platforms)
+      name: clamav-scan
       params:
       - name: image-digest
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
