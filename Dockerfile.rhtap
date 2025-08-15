@@ -2,7 +2,7 @@
 
 ######################################################################
 # Check that submodules for movers are at the correct versions
-FROM brew.registry.redhat.io/rh-osbs/openshift-golang-builder:rhel_9_1.23 AS dep-checker-and-golang-builder
+FROM brew.registry.redhat.io/rh-osbs/openshift-golang-builder:rhel_9_1.24 AS dep-checker-and-golang-builder
 
 WORKDIR /tmp
 
