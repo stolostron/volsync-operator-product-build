@@ -110,7 +110,12 @@ FROM golang-builder AS restic-builder
 COPY volsync/mover-restic/restic ./restic
 COPY volsync/mover-restic/minio-go ./minio-go
 
+# Patch CVEs
+COPY CVE-patches/ CVE-patches/
+RUN ./CVE-patches/patch_restic.sh
+
 WORKDIR /workspace/restic
+RUN go mod download
 
 # Preserve symbols so that we can verify crypto libs
 RUN sed -i 's/preserveSymbols := false/preserveSymbols := true/g' build.go
