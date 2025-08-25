@@ -87,9 +87,10 @@ RUN nm manager | grep -q "goboringcrypto\|golang-fips"
 FROM golang-builder AS rclone-builder
 
 COPY rclone/ rclone/
-COPY CVE-patches/ CVE-patches/
 
-RUN ./CVE-patches/patch.sh
+# Patch CVEs
+COPY CVE-patches/ CVE-patches/
+RUN ./CVE-patches/patch_rclone.sh
 
 WORKDIR /workspace/rclone
 RUN go mod download
