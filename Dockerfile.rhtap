@@ -89,7 +89,7 @@ COPY rclone/ rclone/
 
 # Patch CVEs
 COPY CVE-patches/ CVE-patches/
-RUN ./CVE-patches/patch_rclone.sh
+#RUN ./CVE-patches/patch_rclone.sh
 
 WORKDIR /workspace/rclone
 RUN go mod download
