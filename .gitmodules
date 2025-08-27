@@ -25,4 +25,8 @@
 [submodule "CVE-patches/jwt_v4.5.2"]
 	path = CVE-patches/jwt_v4.5.2
 	url = https://github.com/golang-jwt/jwt
-  branch = v4
+	branch = v4
+[submodule "CVE-patches/jwt_v5.2.2"]
+	path = CVE-patches/jwt_v5.2.2
+	url = https://github.com/golang-jwt/jwt
+	branch = v5
