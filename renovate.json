@@ -8,7 +8,8 @@
   ],
   "updateNotScheduled": true,
   "ignorePaths": [
-    "**/drift-cache/**"
+    "**/drift-cache/**",
+    "**/CVE-patches/**"
   ],
   "ignoreDeps": [
     "rclone",
