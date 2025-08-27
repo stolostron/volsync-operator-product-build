@@ -10,8 +10,17 @@ metadata:
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     # when adding filter for directory use "directory/***".pathChanged()
     # when adding filter for git submodule use "submodule".pathChanged()
-    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "release-0.13" && (".tekton/volsync-0-13-pull-request.yaml".pathChanged() || ".tekton/volsync-0-13-push.yaml".pathChanged() || "Dockerfile.rhtap".pathChanged() || "volsync".pathChanged() || "rclone".pathChanged() || "syncthing".pathChanged() || "diskrsync".pathChanged() || "rpms.in.yaml".pathChanged() || "rpms.lock.yaml".pathChanged())
-  creationTimestamp:
+    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "release-0.13" &&
+      (".tekton/volsync-0-13-pull-request.yaml".pathChanged() ||
+      ".tekton/volsync-0-13-push.yaml".pathChanged() ||
+      "Dockerfile.rhtap".pathChanged() ||
+      "volsync".pathChanged() ||
+      "rclone".pathChanged() ||
+      "syncthing".pathChanged() ||
+      "diskrsync".pathChanged() ||
+      "rpms.in.yaml".pathChanged() ||
+      "rpms.lock.yaml".pathChanged())
+  creationTimestamp: null
   labels:
     appstudio.openshift.io/application: volsync-0-13
     appstudio.openshift.io/component: volsync-0-13
