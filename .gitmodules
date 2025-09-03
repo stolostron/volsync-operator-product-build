@@ -22,3 +22,6 @@
 	path = yq
 	url = https://github.com/mikefarah/yq
 	branch = v4.45.2
+[submodule "CVE-patches/saferith"]
+	path = CVE-patches/saferith
+	url = https://github.com/cronokirby/saferith
