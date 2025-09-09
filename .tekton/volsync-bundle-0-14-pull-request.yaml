@@ -15,9 +15,7 @@ metadata:
       ".tekton/volsync-bundle-0-14-push.yaml".pathChanged() ||
       "bundle.Dockerfile.rhtap".pathChanged() ||
       "bundle-hack/***".pathChanged() ||
-      "rhtap-buildargs.conf".pathChanged() ||
-      "rpms.in.yaml".pathChanged() ||
-      "rpms.lock.yaml".pathChanged())
+      "rhtap-buildargs.conf".pathChanged())
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: volsync-0-14
