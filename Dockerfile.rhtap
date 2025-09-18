@@ -273,7 +273,8 @@ LABEL com.redhat.component="volsync-container" \
       vendor="Red Hat, Inc." \
       url="https://github.com/stolostron/volsync-operator-product-build" \
       release="0" \
-      distribution-scope="public"
+      distribution-scope="public" \
+      cpe="cpe:/a:redhat:acm:2.14::el9"
 
 # License
 RUN mkdir licenses/
