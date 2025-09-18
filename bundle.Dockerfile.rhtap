@@ -85,7 +85,8 @@ LABEL com.redhat.component="volsync-operator-bundle-container" \
       maintainer="['acm-component-maintainers@redhat.com']" \
       description="volsync-operator-bundle" \
       vendor="Red Hat, Inc." \
-      #TODO: Should these be set here?
+      cpe="cpe:/a:redhat:acm:2.15::el9" \
+      #TODO: Should these be set here? \
       url="https://github.com/stolostron/volsync-operator-product-build" \
       release="0" \
       distribution-scope="public"
