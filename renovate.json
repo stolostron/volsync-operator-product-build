@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranches": [
+  "baseBranchPatterns": [
     "main",
     "release-0.12",
     "release-0.13",
@@ -18,9 +18,9 @@
   ],
   "dependencyDashboard": true,
   "dockerfile": {
-    "fileMatch": [
-      "Dockerfile.rhtap",
-      "bundle.Dockerrfile.rhtap"
+    "managerFilePatterns": [
+      "/Dockerfile.rhtap/",
+      "/bundle.Dockerrfile.rhtap/"
     ]
   },
   "git-submodules": {
@@ -32,7 +32,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["rhtap-buildargs.conf"],
+      "managerFilePatterns": [
+        "/rhtap-buildargs.conf/"
+      ],
       "matchStrings": [
         "ARG_OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC=(?<depName>[^<:]*?)(?::(?<currentValue>[^<]*?))?(?:@(?<currentDigest>sha256:[a-f0-9]+))"
       ],
