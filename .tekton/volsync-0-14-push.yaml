@@ -59,6 +59,14 @@ spec:
     - linux/arm64
   - name: dockerfile
     value: Dockerfile.rhtap
+  - name: send-slack-notification
+    value: "true"
+  - name: konflux-application-name
+    value: "volsync-0-14"
+  - name: slack-webhook-url-secret-name
+    value: "slack-notification-secret"
+  - name: slack-webhook-url-secret-key
+    value: "backup-team"
   pipelineRef:
     resolver: git
     params:
