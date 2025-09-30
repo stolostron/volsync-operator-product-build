@@ -15,6 +15,7 @@ metadata:
        ".tekton/volsync-bundle-0-12-push.yaml".pathChanged() ||
        "bundle.Dockerfile.rhtap".pathChanged() ||
        "bundle-hack/***".pathChanged() ||
+       "yq".pathChanged() ||
        "rhtap-buildargs.conf".pathChanged())
   creationTimestamp:
   labels:
