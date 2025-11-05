@@ -59,6 +59,15 @@ spec:
     value: "slack-notification-secret"
   - name: slack-webhook-url-secret-key
     value: "backup-team"
+  taskRunSpecs:
+    # Override to increase memory limit on build-source-image, step: build
+    # See: https://konflux.pages.redhat.com/docs/users/building/overriding-compute-resources.html
+    - pipelineTaskName: build-source-image
+      stepSpecs:
+        - name: build
+          computeResources:
+            limits:
+              memory: 4Gi
   pipelineRef:
     resolver: git
     params:
