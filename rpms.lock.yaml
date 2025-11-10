@@ -2325,13 +2325,13 @@ arches:
     name: go-srpm-macros
     evr: 3.6.0-10.el9_6
     sourcerpm: go-rpm-macros-3.6.0-10.el9_6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-570.60.1.el9_6.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-570.62.1.el9_6.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
-    size: 3719249
-    checksum: sha256:c496ed7901a01462bd7698459c8eb7d5fe868f8bf56c841bca42d627b0effe6f
+    size: 3727257
+    checksum: sha256:207b46e45414f02e5b1e2d1d710927ba1a7a23cd69ee2b46bf9d63b8f07697cf
     name: kernel-headers
-    evr: 5.14.0-570.60.1.el9_6
-    sourcerpm: kernel-5.14.0-570.60.1.el9_6.src.rpm
+    evr: 5.14.0-570.62.1.el9_6
+    sourcerpm: kernel-5.14.0-570.62.1.el9_6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-srpm-macros-1.0-13.el9.noarch.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
     size: 17792
@@ -6834,13 +6834,13 @@ arches:
     name: go-srpm-macros
     evr: 3.6.0-10.el9_6
     sourcerpm: go-rpm-macros-3.6.0-10.el9_6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-570.60.1.el9_6.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-570.62.1.el9_6.x86_64.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
-    size: 3735913
-    checksum: sha256:3a6184fdf92a4526747b27ef6a294c7c5e86898f8377a8437d34773796d3c0e8
+    size: 3743889
+    checksum: sha256:a4929b8d3e70b5d45c0fec63db454b600091433be8a8daa62142a9499a0d2dc6
     name: kernel-headers
-    evr: 5.14.0-570.60.1.el9_6
-    sourcerpm: kernel-5.14.0-570.60.1.el9_6.src.rpm
+    evr: 5.14.0-570.62.1.el9_6
+    sourcerpm: kernel-5.14.0-570.62.1.el9_6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-srpm-macros-1.0-13.el9.noarch.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
     size: 17792
