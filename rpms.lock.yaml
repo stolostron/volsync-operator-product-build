@@ -81,13 +81,13 @@ arches:
     name: go-srpm-macros
     evr: 3.6.0-10.el9_6
     sourcerpm: go-rpm-macros-3.6.0-10.el9_6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-570.60.1.el9_6.aarch64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-570.62.1.el9_6.aarch64.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
-    size: 3697533
-    checksum: sha256:bd936eedb865fc20315eaebd3817d20228ef64909f0367cba86f4241164f1ab8
+    size: 3705537
+    checksum: sha256:5028c463f66ad29ac525c73cfca06e513fb89e2936144204dbc7917d193cc6f8
     name: kernel-headers
-    evr: 5.14.0-570.60.1.el9_6
-    sourcerpm: kernel-5.14.0-570.60.1.el9_6.src.rpm
+    evr: 5.14.0-570.62.1.el9_6
+    sourcerpm: kernel-5.14.0-570.62.1.el9_6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-srpm-macros-1.0-13.el9.noarch.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
     size: 17792
@@ -4583,13 +4583,13 @@ arches:
     name: go-srpm-macros
     evr: 3.6.0-10.el9_6
     sourcerpm: go-rpm-macros-3.6.0-10.el9_6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-570.60.1.el9_6.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-570.62.1.el9_6.s390x.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
-    size: 3727261
-    checksum: sha256:c67bd1a413e7d4bfc6590abb550609512a0123a6caf64dfa122a002858625ded
+    size: 3735229
+    checksum: sha256:fcea3938faee6970ec7457d373339878ab88e63acace6cb096f23f67c6b0a8e0
     name: kernel-headers
-    evr: 5.14.0-570.60.1.el9_6
-    sourcerpm: kernel-5.14.0-570.60.1.el9_6.src.rpm
+    evr: 5.14.0-570.62.1.el9_6
+    sourcerpm: kernel-5.14.0-570.62.1.el9_6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-srpm-macros-1.0-13.el9.noarch.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
     size: 17792
