@@ -6813,13 +6813,13 @@ arches:
     name: go-srpm-macros
     evr: 3.6.0-11.el9
     sourcerpm: go-rpm-macros-3.6.0-11.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-611.7.1.el9_7.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-611.8.1.el9_7.x86_64.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
-    size: 2982545
-    checksum: sha256:f23e85b193ff7fd6ec26e7f84b9a042f19bcafffab9f6f6d42acdc305b58f702
+    size: 2985529
+    checksum: sha256:c290b18dcacfd513ca4e07279c4e30680345b04da41f85486e0bb107aa12367d
     name: kernel-headers
-    evr: 5.14.0-611.7.1.el9_7
-    sourcerpm: kernel-5.14.0-611.7.1.el9_7.src.rpm
+    evr: 5.14.0-611.8.1.el9_7
+    sourcerpm: kernel-5.14.0-611.8.1.el9_7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-srpm-macros-1.0-14.el9.noarch.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
     size: 14098
