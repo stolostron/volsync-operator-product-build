@@ -4,24 +4,25 @@ metadata:
   annotations:
     build.appstudio.openshift.io/repo: https://github.com/stolostron/volsync-operator-product-build?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
+    build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
-    pipelinesascode.tekton.dev/cancel-in-progress: "false"
+    pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     # when adding filter for directory use "directory/***".pathChanged()
     # when adding filter for git submodule use "submodule".pathChanged()
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "release-0.14" &&
-      (".tekton/volsync-bundle-0-14-pull-request.yaml".pathChanged() ||
-      ".tekton/volsync-bundle-0-14-push.yaml".pathChanged() ||
+    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "release-0.15" &&
+      (".tekton/volsync-bundle-0-15-pull-request.yaml".pathChanged() ||
+      ".tekton/volsync-bundle-0-15-push.yaml".pathChanged() ||
       "bundle.Dockerfile.rhtap".pathChanged() ||
       "bundle-hack/***".pathChanged() ||
       "yq".pathChanged() ||
       "rhtap-buildargs.conf".pathChanged())
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: volsync-0-14
-    appstudio.openshift.io/component: volsync-bundle-0-14
+    appstudio.openshift.io/application: volsync-0-15
+    appstudio.openshift.io/component: volsync-bundle-0-15
     pipelines.appstudio.openshift.io/type: build
-  name: volsync-bundle-0-14-on-push
+  name: volsync-bundle-0-15-on-pull-request
   namespace: volsync-tenant
 spec:
   params:
@@ -40,17 +41,11 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/volsync-tenant/volsync-bundle-0-14:{{revision}}
+    value: quay.io/redhat-user-workloads/volsync-tenant/volsync-bundle-0-15:on-pr-{{revision}}
+  - name: image-expires-after
+    value: 5d
   - name: dockerfile
     value: bundle.Dockerfile.rhtap
-  - name: send-slack-notification
-    value: "true"
-  - name: konflux-application-name
-    value: "volsync-0-14"
-  - name: slack-webhook-url-secret-name
-    value: "slack-notification-secret"
-  - name: slack-webhook-url-secret-key
-    value: "backup-team"
   pipelineRef:
     resolver: git
     params:
@@ -61,7 +56,7 @@ spec:
       - name: pathInRepo
         value: pipelines/common-oci-ta.yaml
   taskRunTemplate:
-    serviceAccountName: build-pipeline-volsync-bundle-0-14
+    serviceAccountName: build-pipeline-volsync-bundle-0-15
   workspaces:
   - name: git-auth
     secret:
