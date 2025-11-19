@@ -1,7 +1,7 @@
 [submodule "volsync"]
 	path = volsync
 	url = https://github.com/backube/volsync
-	branch = release-0.14
+	branch = release-0.15
 [submodule "rclone"]
 	path = rclone
 	url = https://github.com/rclone/rclone

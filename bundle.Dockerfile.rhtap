@@ -58,7 +58,7 @@ LABEL operators.operatorframework.io.bundle.mediatype.v1=registry+v1
 LABEL operators.operatorframework.io.bundle.manifests.v1=manifests/
 LABEL operators.operatorframework.io.bundle.metadata.v1=metadata/
 LABEL operators.operatorframework.io.bundle.package.v1=volsync
-LABEL operators.operatorframework.io.bundle.channels.v1=stable,stable-0.14
+LABEL operators.operatorframework.io.bundle.channels.v1=stable,stable-0.15
 LABEL operators.operatorframework.io.bundle.channel.default.v1=stable
 LABEL operators.operatorframework.io.metrics.builder=operator-sdk-v1.33.0
 LABEL operators.operatorframework.io.metrics.mediatype.v1=metrics+v1
@@ -85,7 +85,7 @@ LABEL com.redhat.component="volsync-operator-bundle-container" \
       maintainer="['acm-component-maintainers@redhat.com']" \
       description="volsync-operator-bundle" \
       vendor="Red Hat, Inc." \
-      cpe="cpe:/a:redhat:acm:2.15::el9" \
+      cpe="cpe:/a:redhat:acm:2.16::el9" \
       #TODO: Should these be set here? \
       url="https://github.com/stolostron/volsync-operator-product-build" \
       release="0" \
