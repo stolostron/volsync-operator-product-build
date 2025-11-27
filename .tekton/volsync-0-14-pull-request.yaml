@@ -41,6 +41,7 @@ spec:
     - {"type": "gomod", "path": "syncthing/"}
     - {"type": "gomod", "path": "diskrsync/"}
     - {"type": "gomod", "path": "CVE-patches/saferith"}
+    - {"type": "gomod", "path": "CVE-patches/crypto_v0.45.0"}
     - {"type": "rpm", "path": "."}
   - name: build-args-file
     value: "rhtap-buildargs.conf"
