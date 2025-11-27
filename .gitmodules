@@ -25,3 +25,6 @@
 [submodule "CVE-patches/saferith"]
 	path = CVE-patches/saferith
 	url = https://github.com/cronokirby/saferith
+[submodule "CVE-patches/crypto_v0.45.0"]
+	path = CVE-patches/crypto_v0.45.0
+	url = https://go.googlesource.com/crypto
