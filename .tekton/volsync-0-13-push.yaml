@@ -18,6 +18,7 @@ metadata:
       "rclone".pathChanged() ||
       "syncthing".pathChanged() ||
       "diskrsync".pathChanged() ||
+      "CVE-patches/***".pathChanged() ||
       "rpms.in.yaml".pathChanged() ||
       "rpms.lock.yaml".pathChanged())
   creationTimestamp: null
