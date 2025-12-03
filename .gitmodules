@@ -21,7 +21,7 @@
 [submodule "yq"]
 	path = yq
 	url = https://github.com/mikefarah/yq
-	branch = v4.45.2
+	branch = v4.49.2
 [submodule "CVE-patches/jwt_v4.5.2"]
 	path = CVE-patches/jwt_v4.5.2
 	url = https://github.com/golang-jwt/jwt
