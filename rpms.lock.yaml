@@ -2174,13 +2174,6 @@ arches:
     name: systemd
     evr: 252-55.el9_7.7
     sourcerpm: systemd-252-55.el9_7.7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/s/systemd-libs-252-55.el9_7.7.aarch64.rpm
-    repoid: ubi-9-for-aarch64-baseos-rpms
-    size: 659553
-    checksum: sha256:b0527a30f7e891011b36b7f98671186da9a680ca747523f3b9a6b055449cd9e4
-    name: systemd-libs
-    evr: 252-55.el9_7.7
-    sourcerpm: systemd-252-55.el9_7.7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/s/systemd-pam-252-55.el9_7.7.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
     size: 278843
@@ -4416,13 +4409,6 @@ arches:
     size: 4444738
     checksum: sha256:1fda3330e62c7f2b5be7326201a2ad90ab36c09a3acec73b9a7627b84c2b99e7
     name: systemd
-    evr: 252-55.el9_7.7
-    sourcerpm: systemd-252-55.el9_7.7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/s/systemd-libs-252-55.el9_7.7.ppc64le.rpm
-    repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 725150
-    checksum: sha256:dd9e8a310e691e367cffa21f5920b416158c1b347345b4095ecef757485c566b
-    name: systemd-libs
     evr: 252-55.el9_7.7
     sourcerpm: systemd-252-55.el9_7.7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/s/systemd-pam-252-55.el9_7.7.ppc64le.rpm
@@ -6662,13 +6648,6 @@ arches:
     name: systemd
     evr: 252-55.el9_7.7
     sourcerpm: systemd-252-55.el9_7.7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/s/systemd-libs-252-55.el9_7.7.s390x.rpm
-    repoid: ubi-9-for-s390x-baseos-rpms
-    size: 653263
-    checksum: sha256:f8d1e1458c93e9e76721f1325e2b8a4f00846a21253c65acdf2615770692eb83
-    name: systemd-libs
-    evr: 252-55.el9_7.7
-    sourcerpm: systemd-252-55.el9_7.7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/s/systemd-pam-252-55.el9_7.7.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
     size: 278769
@@ -8897,13 +8876,6 @@ arches:
     size: 4410717
     checksum: sha256:19ea80e6fec0f3a3b1679da5b9051cca50e776c3d4213dc660cc212d668786f7
     name: systemd
-    evr: 252-55.el9_7.7
-    sourcerpm: systemd-252-55.el9_7.7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/s/systemd-libs-252-55.el9_7.7.x86_64.rpm
-    repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 692644
-    checksum: sha256:5d680cdb8034d8170b76e4c352dad3474def9b277d0b35065ca2acb66e623df0
-    name: systemd-libs
     evr: 252-55.el9_7.7
     sourcerpm: systemd-252-55.el9_7.7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/s/systemd-pam-252-55.el9_7.7.x86_64.rpm
