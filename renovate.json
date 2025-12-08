@@ -1,12 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranchPatterns": [
-    "main",
-    "release-0.12",
-    "release-0.13",
-    "release-0.14",
-    "release-0.15"
-  ],
   "updateNotScheduled": true,
   "ignorePaths": [
     "**/drift-cache/**",
