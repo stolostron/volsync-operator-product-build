@@ -19,7 +19,5 @@ jobs:
         run: |
           BASE_BRANCH="${{ github.event.pull_request.base.ref }}"
 
-          if [[ "$BASE_BRANCH" =~ ^release-.* ]]; then
-            gh label create "$BASE_BRANCH" --repo "${{ github.repository }}" --color "7057ff" --force
-            gh pr edit "${{ github.event.pull_request.number }}" --repo "${{ github.repository }}" --add-label "$BASE_BRANCH"
-          fi
+          gh label create "$BASE_BRANCH" --repo "${{ github.repository }}" --color "7057ff" --force
+          gh pr edit "${{ github.event.pull_request.number }}" --repo "${{ github.repository }}" --add-label "$BASE_BRANCH"
