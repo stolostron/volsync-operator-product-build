@@ -73,20 +73,20 @@ and [rpms.lock.yaml](rpms.lock.yaml)
 
 Using the [rpm-lockfile-prototype tool](https://github.com/konflux-ci/rpm-lockfile-prototype)
 
-Steps to run it as a container (this has some manual steps as it seems we need to manually login to registry.redhat.io)
+Steps to locally update rpms lockfile: 
 
-1. First update the rpms.in.yaml
-1. Now start the container
+
+0. Intial setup of [rpm-lockfile-prototype tool](https://github.com/konflux-ci/rpm-lockfile-prototype)
+1. Update the rpms.in.yaml inside the project
+1. Check if `$HOME/.docker/config.json` has access to registry.redhat.io
+1. Now run the tool inside the container
 
 ```bash
 container_dir=/work
-podman run -it --entrypoint=/bin/bash -v ${PWD}:${container_dir} localhost/rpm-lockfile-prototype:latest
-```
-
-1. Exec into the container and run the following:
-
-```bash
-skopeo login registry.redhat.io
-...
-rpm-lockfile-prototype --outfile=/work/rpms.lock.yaml /work/rpms.in.yaml
+podman run --rm \
+  -v "${PWD}:${container_dir}:z" \
+  -v "$HOME/.docker/config.json:/root/.docker/config.json:ro,z" \
+  localhost/rpm-lockfile-prototype:latest \
+  --outfile="${container_dir}/rpms.lock.yaml" \
+  "${container_dir}/rpms.in.yaml"
 ```
