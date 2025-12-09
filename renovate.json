@@ -37,5 +37,6 @@
       "versioningTemplate": "docker"
     }
   ],
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "behind-base-branch",
+  "commitMessage": "[{{{baseBranch}}}] {{{commitMessage}}}"
 }
