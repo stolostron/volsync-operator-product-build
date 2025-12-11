@@ -92,7 +92,6 @@ COPY CVE-patches/ CVE-patches/
 RUN ./CVE-patches/patch_rclone.sh
 
 WORKDIR /workspace/rclone
-RUN go mod download
 
 # Remove link flag that strips symbols so that we can verify crypto libs
 RUN sed -i 's/--ldflags "-s /--ldflags "/g' Makefile

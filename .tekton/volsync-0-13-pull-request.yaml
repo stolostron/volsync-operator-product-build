@@ -40,7 +40,7 @@ spec:
     - {"type": "gomod", "path": "rclone/"}
     - {"type": "gomod", "path": "syncthing/"}
     - {"type": "gomod", "path": "diskrsync/"}
-    - {"type": "gomod", "path": "CVE-patches/jwt_v4.5.2"}
+    - {"type": "gomod", "path": "CVE-patches/rclone_patch_deps"}
     - {"type": "rpm", "path": "."}
   - name: build-args-file
     value: "rhtap-buildargs.conf"
@@ -57,6 +57,9 @@ spec:
   - name: build-platforms
     value:
     - linux/x86_64
+    - linux/ppc64le
+    - linux/s390x
+    - linux/arm64
   - name: dockerfile
     value: Dockerfile.rhtap
   taskRunSpecs:
