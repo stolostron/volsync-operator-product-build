@@ -81,13 +81,13 @@ arches:
     name: go-srpm-macros
     evr: 3.6.0-12.el9_7
     sourcerpm: go-rpm-macros-3.6.0-12.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-611.24.1.el9_7.aarch64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-611.26.1.el9_7.aarch64.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
-    size: 2968477
-    checksum: sha256:a60380cbf908bc16b00e560146cda2f106b4eab1932ed2a3420921419897b0f4
+    size: 2970093
+    checksum: sha256:d37df9739ee3fae172b024b8a6a90e6768494e3507e7098582a05b328c63e8e6
     name: kernel-headers
-    evr: 5.14.0-611.24.1.el9_7
-    sourcerpm: kernel-5.14.0-611.24.1.el9_7.src.rpm
+    evr: 5.14.0-611.26.1.el9_7
+    sourcerpm: kernel-5.14.0-611.26.1.el9_7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-srpm-macros-1.0-14.el9.noarch.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
     size: 14098
@@ -2013,13 +2013,6 @@ arches:
     name: openssl
     evr: 1:3.5.1-5.el9_7
     sourcerpm: openssl-3.5.1-5.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/o/openssl-libs-3.5.1-5.el9_7.aarch64.rpm
-    repoid: ubi-9-for-aarch64-baseos-rpms
-    size: 2277953
-    checksum: sha256:eb38a72864d302a67a9aed8c5c2c86a07bbbdd034ca03db589d65939aa3760d7
-    name: openssl-libs
-    evr: 1:3.5.1-5.el9_7
-    sourcerpm: openssl-3.5.1-5.el9_7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/p/pam-1.5.1-26.el9_6.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
     size: 636107
@@ -2241,13 +2234,13 @@ arches:
     name: go-srpm-macros
     evr: 3.6.0-12.el9_7
     sourcerpm: go-rpm-macros-3.6.0-12.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-611.24.1.el9_7.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-611.26.1.el9_7.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
-    size: 2990205
-    checksum: sha256:6b99c8c2f56e501dede4a9bde246352014d4c926e08ca34bd19eda710fa38440
+    size: 2991757
+    checksum: sha256:5d4654e753411cc010e50a971bb2429c6d6086161c8ebfb7925d3e26fe4a27f2
     name: kernel-headers
-    evr: 5.14.0-611.24.1.el9_7
-    sourcerpm: kernel-5.14.0-611.24.1.el9_7.src.rpm
+    evr: 5.14.0-611.26.1.el9_7
+    sourcerpm: kernel-5.14.0-611.26.1.el9_7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-srpm-macros-1.0-14.el9.noarch.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
     size: 14098
@@ -4180,13 +4173,6 @@ arches:
     name: openssl
     evr: 1:3.5.1-5.el9_7
     sourcerpm: openssl-3.5.1-5.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/o/openssl-libs-3.5.1-5.el9_7.ppc64le.rpm
-    repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 2540798
-    checksum: sha256:0a96569b587b2fb8a0aeb4d05edd395403a1d1ab74a9642c7d9e22d6686097d0
-    name: openssl-libs
-    evr: 1:3.5.1-5.el9_7
-    sourcerpm: openssl-3.5.1-5.el9_7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/p/pam-1.5.1-26.el9_6.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
     size: 677447
@@ -4415,13 +4401,13 @@ arches:
     name: go-srpm-macros
     evr: 3.6.0-12.el9_7
     sourcerpm: go-rpm-macros-3.6.0-12.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-611.24.1.el9_7.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-611.26.1.el9_7.s390x.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
-    size: 2998653
-    checksum: sha256:ef1aac2eb13683b045a78d837ae281f2bfd7605d24bd8e84a8a73bcb59c37810
+    size: 3000297
+    checksum: sha256:d423901e99200e1bb7f2291dd4bbb93f49f4f3300d5b190cd48ab0876692f504
     name: kernel-headers
-    evr: 5.14.0-611.24.1.el9_7
-    sourcerpm: kernel-5.14.0-611.24.1.el9_7.src.rpm
+    evr: 5.14.0-611.26.1.el9_7
+    sourcerpm: kernel-5.14.0-611.26.1.el9_7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-srpm-macros-1.0-14.el9.noarch.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
     size: 14098
@@ -6347,13 +6333,6 @@ arches:
     name: openssl
     evr: 1:3.5.1-5.el9_7
     sourcerpm: openssl-3.5.1-5.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/o/openssl-libs-3.5.1-5.el9_7.s390x.rpm
-    repoid: ubi-9-for-s390x-baseos-rpms
-    size: 2030256
-    checksum: sha256:e8bcee3f37dcc487b3b30afa9a8a398e7afac9e0014f69e7a3b7d779a6e00350
-    name: openssl-libs
-    evr: 1:3.5.1-5.el9_7
-    sourcerpm: openssl-3.5.1-5.el9_7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/p/pam-1.5.1-26.el9_6.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
     size: 628673
@@ -6582,13 +6561,13 @@ arches:
     name: go-srpm-macros
     evr: 3.6.0-12.el9_7
     sourcerpm: go-rpm-macros-3.6.0-12.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-611.24.1.el9_7.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-611.26.1.el9_7.x86_64.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
-    size: 3007525
-    checksum: sha256:45e0c38ff72eae65683887a45ffcf11e44444c9f4732c808b13e4e0c2ccd9006
+    size: 3009125
+    checksum: sha256:7b5ae61202e1ecb8990167f22097808f6a4736737df44419124b78a01d73606a
     name: kernel-headers
-    evr: 5.14.0-611.24.1.el9_7
-    sourcerpm: kernel-5.14.0-611.24.1.el9_7.src.rpm
+    evr: 5.14.0-611.26.1.el9_7
+    sourcerpm: kernel-5.14.0-611.26.1.el9_7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-srpm-macros-1.0-14.el9.noarch.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
     size: 14098
@@ -8498,13 +8477,6 @@ arches:
     size: 1555474
     checksum: sha256:3bfd7ceb59a554e40cb417e2b5b2d046be671ce49abc058328807049baf1134f
     name: openssl
-    evr: 1:3.5.1-5.el9_7
-    sourcerpm: openssl-3.5.1-5.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/o/openssl-libs-3.5.1-5.el9_7.x86_64.rpm
-    repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 2411938
-    checksum: sha256:632caf8af918169330719ff0bf79ea7ba3e545a352e3da293df5cf4fbbb70e4d
-    name: openssl-libs
     evr: 1:3.5.1-5.el9_7
     sourcerpm: openssl-3.5.1-5.el9_7.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/p/pam-1.5.1-26.el9_6.x86_64.rpm
