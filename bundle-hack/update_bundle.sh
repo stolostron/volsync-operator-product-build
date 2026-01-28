@@ -13,12 +13,10 @@ env
 # Check for needed env vars - these are set from rhtap-buildargs.conf
 if [[ -z "$VERSION" ]] ||
   [[ -z "$STAGE_VOLSYNC_IMAGE_PULLSPEC" ]] ||
-  [[ -z "$OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC" ]] ||
   [[ -z "$ACM_DOCLINK" ]]; then
   echo "ERROR: All required environment variables not loaded"
   echo "    VERSION"
   echo "    STAGE_VOLSYNC_IMAGE_PULLSPEC"
-  echo "    OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC"
   echo "    ACM_DOCLINK"
   exit 2
 fi
@@ -36,13 +34,8 @@ fi
 # Update img reference to final registry.redhat.io location
 export VOLSYNC_IMAGE_PULLSPEC="registry.redhat.io/rhacm2/volsync-rhel9@${STAGE_VOLSYNC_IMAGE_PULLSPEC##*@}"
 
-# Update rbac proxy image link to remove the tag - rhtap-buildargs has pinned digest with tag so renovate can update,
-# But we don't want the tag in the bundle references
-export OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC="${OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC/:*@sha256/@sha256}"
-
 echo "### Updated image refs: ###"
 echo " VOLSYNC_IMAGE_PULLSPEC: ${VOLSYNC_IMAGE_PULLSPEC}"
-echo " OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC: ${OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC}"
 echo ""
 
 if [ ! -f "${CSV_FILE}" ]; then
@@ -60,8 +53,6 @@ yq --version
 # as this is no longer used as of version 0.2.0.
 sed -i \
   -e "s|quay.io/backube/volsync:latest|${VOLSYNC_IMAGE_PULLSPEC}|g" \
-  -e "s|gcr.io/kubebuilder/kube-rbac-proxy:.*$|${OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC}|g" \
-  -e "s|quay.io/brancz/kube-rbac-proxy:.*$|${OSE_KUBE_RBAC_PROXY_IMAGE_PULLSPEC}|g" \
   "${CSV_FILE}"
 
 # Convert volsync name to volsync-product in files
