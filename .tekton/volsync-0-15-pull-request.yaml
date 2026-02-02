@@ -80,6 +80,8 @@ spec:
         value: main
       - name: pathInRepo
         value: pipelines/common.yaml
+  timeouts:
+    pipeline: "2h0m0s"
   taskRunTemplate:
     serviceAccountName: build-pipeline-volsync-0-15
   workspaces:
