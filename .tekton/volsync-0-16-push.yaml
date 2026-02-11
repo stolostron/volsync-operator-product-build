@@ -10,9 +10,9 @@ metadata:
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     # when adding filter for directory use "directory/***".pathChanged()
     # when adding filter for git submodule use "submodule".pathChanged()
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "release-0.15" &&
-      (".tekton/volsync-0-15-pull-request.yaml".pathChanged() ||
-      ".tekton/volsync-0-15-push.yaml".pathChanged() ||
+    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "release-0.16" &&
+      (".tekton/volsync-0-16-pull-request.yaml".pathChanged() ||
+      ".tekton/volsync-0-16-push.yaml".pathChanged() ||
       "Dockerfile.rhtap".pathChanged() ||
       "volsync".pathChanged() ||
       "rclone".pathChanged() ||
@@ -23,10 +23,10 @@ metadata:
       "rpms.lock.yaml".pathChanged())
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: volsync-0-15
-    appstudio.openshift.io/component: volsync-0-15
+    appstudio.openshift.io/application: volsync-0-16
+    appstudio.openshift.io/component: volsync-0-16
     pipelines.appstudio.openshift.io/type: build
-  name: volsync-0-15-on-push
+  name: volsync-0-16-on-push
   namespace: volsync-tenant
 spec:
   params:
@@ -51,7 +51,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/volsync-tenant/volsync-0-15:{{revision}}
+    value: quay.io/redhat-user-workloads/volsync-tenant/volsync-0-16:{{revision}}
   - name: build-platforms
     value:
     - linux/x86_64
@@ -63,7 +63,7 @@ spec:
   - name: send-slack-notification
     value: "true"
   - name: konflux-application-name
-    value: "volsync-0-15"
+    value: "volsync-0-16"
   - name: slack-webhook-url-secret-name
     value: "slack-notification-secret"
   - name: slack-webhook-url-secret-key
@@ -89,7 +89,7 @@ spec:
   timeouts:
     pipeline: "2h0m0s"
   taskRunTemplate:
-    serviceAccountName: build-pipeline-volsync-0-15
+    serviceAccountName: build-pipeline-volsync-0-16
   workspaces:
   - name: git-auth
     secret:
