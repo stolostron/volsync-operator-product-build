@@ -67,13 +67,13 @@ arches:
     name: ghc-srpm-macros
     evr: 1.5.0-6.el9
     sourcerpm: ghc-srpm-macros-1.5.0-6.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/g/glibc-devel-2.34-231.el9_7.2.aarch64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/g/glibc-devel-2.34-231.el9_7.10.aarch64.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
-    size: 568363
-    checksum: sha256:5e3bbdb64dad55fdb07540756c333e0a73afe4ab493de199277a82138c224352
+    size: 574689
+    checksum: sha256:8c65fcccb3edde97d47a2a226cf768476ed4a12a31074a6112925f6569750b20
     name: glibc-devel
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/g/go-srpm-macros-3.6.0-12.el9_7.noarch.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
     size: 27275
@@ -1866,13 +1866,34 @@ arches:
     name: findutils
     evr: 1:4.8.0-7.el9
     sourcerpm: findutils-4.8.0-7.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/g/glibc-gconv-extra-2.34-231.el9_7.2.aarch64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/g/glibc-2.34-231.el9_7.10.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
-    size: 1817539
-    checksum: sha256:9664e711983109a5b1c7b4b61a1a9f0c9b518a829eeef7064a138e7bcfec1f2d
+    size: 1816615
+    checksum: sha256:cda08ffeb26cf926087f6aafd98d7c192c9e6f422ea0a33dbccd2c8e71a3feae
+    name: glibc
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/g/glibc-common-2.34-231.el9_7.10.aarch64.rpm
+    repoid: ubi-9-for-aarch64-baseos-rpms
+    size: 310292
+    checksum: sha256:5fba269c9c1713ff7857bc1397e0f629ee6ed76775fcf2c9f3a464891ff0340b
+    name: glibc-common
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/g/glibc-gconv-extra-2.34-231.el9_7.10.aarch64.rpm
+    repoid: ubi-9-for-aarch64-baseos-rpms
+    size: 1824070
+    checksum: sha256:d181ac8b41e7b184af5fa20494fdf467a585a508a274b3d3af39f34fcc3823e9
     name: glibc-gconv-extra
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/g/glibc-minimal-langpack-2.34-231.el9_7.10.aarch64.rpm
+    repoid: ubi-9-for-aarch64-baseos-rpms
+    size: 28365
+    checksum: sha256:f14adf0f40453c1f504a705f172070cdbc7f64846f3c2f93ac26c361b3a9c77e
+    name: glibc-minimal-langpack
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/g/groff-base-1.22.4-10.el9.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
     size: 1088949
@@ -2220,13 +2241,13 @@ arches:
     name: ghc-srpm-macros
     evr: 1.5.0-6.el9
     sourcerpm: ghc-srpm-macros-1.5.0-6.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/g/glibc-devel-2.34-231.el9_7.2.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/g/glibc-devel-2.34-231.el9_7.10.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
-    size: 582161
-    checksum: sha256:436abeff512c5c31558b6ee07804e7988f44f3a954ee98198746fae4f50a05d3
+    size: 588388
+    checksum: sha256:3e308099aef9d19160c4dc0652a0a377f6b9491d9bf8f9485efcd9c998ae0392
     name: glibc-devel
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/g/go-srpm-macros-3.6.0-12.el9_7.noarch.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
     size: 27275
@@ -4019,13 +4040,34 @@ arches:
     name: findutils
     evr: 1:4.8.0-7.el9
     sourcerpm: findutils-4.8.0-7.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/g/glibc-gconv-extra-2.34-231.el9_7.2.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/g/glibc-2.34-231.el9_7.10.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 1820732
-    checksum: sha256:ee310efe0c9b572266bb65bb2d04bd948fd2d3004e1ed93bc287f3277e53d92f
+    size: 2885586
+    checksum: sha256:e371bfb3702c19ddb1da83593ff09e9752fb907143753efa2a3300d67c5b8fa8
+    name: glibc
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/g/glibc-common-2.34-231.el9_7.10.ppc64le.rpm
+    repoid: ubi-9-for-ppc64le-baseos-rpms
+    size: 337047
+    checksum: sha256:7b437ae52a5f679cc799e6ac25f52e1a7b8dbdcb5e095d1f5eedc697b25560ca
+    name: glibc-common
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/g/glibc-gconv-extra-2.34-231.el9_7.10.ppc64le.rpm
+    repoid: ubi-9-for-ppc64le-baseos-rpms
+    size: 1826305
+    checksum: sha256:227c1065e8c29f6035e5bf35e99559e31fa7f4d1c4a3b61ddd4d2b8e9cd4f708
     name: glibc-gconv-extra
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/g/glibc-minimal-langpack-2.34-231.el9_7.10.ppc64le.rpm
+    repoid: ubi-9-for-ppc64le-baseos-rpms
+    size: 28381
+    checksum: sha256:125b9a17ebe4940a79899e326ced10db04851101e1cc7899e9d0aecc8407d9fd
+    name: glibc-minimal-langpack
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/g/groff-base-1.22.4-10.el9.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
     size: 1156956
@@ -4380,20 +4422,20 @@ arches:
     name: ghc-srpm-macros
     evr: 1.5.0-6.el9
     sourcerpm: ghc-srpm-macros-1.5.0-6.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/g/glibc-devel-2.34-231.el9_7.2.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/g/glibc-devel-2.34-231.el9_7.10.s390x.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
-    size: 48934
-    checksum: sha256:55d203ca8b87471267834f92f9c4b0cd99d64575b849458e865269909c359b33
+    size: 55293
+    checksum: sha256:04f840e95240908817b24e8e14471469fe4acdc36e21cf1f4bf3f93df5916f1b
     name: glibc-devel
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/g/glibc-headers-2.34-231.el9_7.2.s390x.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/g/glibc-headers-2.34-231.el9_7.10.s390x.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
-    size: 549011
-    checksum: sha256:672400ee296df23694a58710a1895d8dcda1e04d9b6cc6f63094d1dbbb9ba970
+    size: 555359
+    checksum: sha256:8a0515facc94836c5695c9cf671d166594ff3369bc07def5425972f22ef75fcf
     name: glibc-headers
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/g/go-srpm-macros-3.6.0-12.el9_7.noarch.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
     size: 27275
@@ -6186,13 +6228,34 @@ arches:
     name: findutils
     evr: 1:4.8.0-7.el9
     sourcerpm: findutils-4.8.0-7.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/g/glibc-gconv-extra-2.34-231.el9_7.2.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/g/glibc-2.34-231.el9_7.10.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
-    size: 1745103
-    checksum: sha256:9b099ac658baee9229d71f3eb43697509d47ba8dc473246fce8984a39d87cf9f
+    size: 1792177
+    checksum: sha256:16bf784842724127ae692801bdcc42db906843f02914178f55944b80ca42c4bf
+    name: glibc
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/g/glibc-common-2.34-231.el9_7.10.s390x.rpm
+    repoid: ubi-9-for-s390x-baseos-rpms
+    size: 323956
+    checksum: sha256:607fa9dbb32ca12910b10db8120a599e11718dc35734cb98e42bc07ca6dfa0fa
+    name: glibc-common
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/g/glibc-gconv-extra-2.34-231.el9_7.10.s390x.rpm
+    repoid: ubi-9-for-s390x-baseos-rpms
+    size: 1751293
+    checksum: sha256:74f10e1a1aacff9937ca93ab7d6063f142629b12de9d9ffa8066922871615d35
     name: glibc-gconv-extra
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/g/glibc-minimal-langpack-2.34-231.el9_7.10.s390x.rpm
+    repoid: ubi-9-for-s390x-baseos-rpms
+    size: 28377
+    checksum: sha256:1de4d803dc1791a819dbe4935cb59ae5c7f0964172ede5cd96226ef151fe6ab2
+    name: glibc-minimal-langpack
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/g/groff-base-1.22.4-10.el9.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
     size: 1100747
@@ -6540,20 +6603,20 @@ arches:
     name: ghc-srpm-macros
     evr: 1.5.0-6.el9
     sourcerpm: ghc-srpm-macros-1.5.0-6.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/g/glibc-devel-2.34-231.el9_7.2.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/g/glibc-devel-2.34-231.el9_7.10.x86_64.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
-    size: 37885
-    checksum: sha256:6468a64e723d9fff4921fe05b8b5117b19277999053b20d67416f727b2b8d3dd
+    size: 44222
+    checksum: sha256:4bf307483b5c6c359b7484804c453ab5c6b0fc65c7cd5368e2572077d804d559
     name: glibc-devel
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/g/glibc-headers-2.34-231.el9_7.2.x86_64.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/g/glibc-headers-2.34-231.el9_7.10.x86_64.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
-    size: 558293
-    checksum: sha256:f4405218c4527e240f0739ba1b63e8a653e74ef48e960c0e164da55eec8c51dc
+    size: 564682
+    checksum: sha256:dfabaa79899e36aa920d901851e5c2101d43b91d9f466dc97c35b4c14290d4e7
     name: glibc-headers
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/g/go-srpm-macros-3.6.0-12.el9_7.noarch.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
     size: 27275
@@ -8332,13 +8395,34 @@ arches:
     name: findutils
     evr: 1:4.8.0-7.el9
     sourcerpm: findutils-4.8.0-7.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/g/glibc-gconv-extra-2.34-231.el9_7.2.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/g/glibc-2.34-231.el9_7.10.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 1759310
-    checksum: sha256:62b806a05b998161d8d5f4d5b9006664f279f1afdb7861b3c8516c81ce0fa4b1
+    size: 2079929
+    checksum: sha256:a579dd638fca8d9829b33988592df76199233297eb68a19d7e0e3d13775f8d54
+    name: glibc
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/g/glibc-common-2.34-231.el9_7.10.x86_64.rpm
+    repoid: ubi-9-for-x86_64-baseos-rpms
+    size: 319966
+    checksum: sha256:fec3c305983e64fbb6150a61e6591f743542e44908a6c6c7b50e9c39d6ebed1a
+    name: glibc-common
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/g/glibc-gconv-extra-2.34-231.el9_7.10.x86_64.rpm
+    repoid: ubi-9-for-x86_64-baseos-rpms
+    size: 1765503
+    checksum: sha256:17c997f5c4f492905f20196848d3dbee3ff46ce02033992465d750d2ecede7c8
     name: glibc-gconv-extra
-    evr: 2.34-231.el9_7.2
-    sourcerpm: glibc-2.34-231.el9_7.2.src.rpm
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/g/glibc-minimal-langpack-2.34-231.el9_7.10.x86_64.rpm
+    repoid: ubi-9-for-x86_64-baseos-rpms
+    size: 28397
+    checksum: sha256:ec2bee0afbe9f360b4ac23655b42daaf2c30f4c276d5c82090cb6fe5cbab3e1c
+    name: glibc-minimal-langpack
+    evr: 2.34-231.el9_7.10
+    sourcerpm: glibc-2.34-231.el9_7.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/g/groff-base-1.22.4-10.el9.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
     size: 1133828
