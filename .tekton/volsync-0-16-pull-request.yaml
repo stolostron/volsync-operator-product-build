@@ -79,7 +79,7 @@ spec:
       - name: revision
         value: main
       - name: pathInRepo
-        value: pipelines/common.yaml
+        value: pipelines/common-base.yaml
   timeouts:
     pipeline: "2h0m0s"
   taskRunTemplate:
