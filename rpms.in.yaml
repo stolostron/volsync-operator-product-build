@@ -10,7 +10,7 @@ packages:
   - openssh
   - openssh-clients
   - openssh-server
-  - perl
+  - python3
   - stunnel
   - openssl
   - vim-minimal
