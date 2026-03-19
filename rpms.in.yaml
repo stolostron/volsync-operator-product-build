@@ -6,6 +6,7 @@ contentOrigin:
       baseurl: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/${basearch}/appstream/os/
 packages:
   # For Volsync final image (see Dockerfile.rhtap)
+  - findutils
   - acl
   - openssh
   - openssh-clients
