@@ -2139,13 +2139,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-21.el9_7
     sourcerpm: util-linux-2.37.4-21.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/v/vim-minimal-8.2.2637-23.el9_7.2.aarch64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/v/vim-minimal-8.2.2637-23.el9_7.3.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
-    size: 667930
-    checksum: sha256:b86a575ee0d74f195b4ef488a3cee863fffad2fa2f4610359dad81f30b892864
+    size: 668109
+    checksum: sha256:6e2051ba7a8ee6ec8ddee5263f44ec4d30976870bda31a3f1225864f7f797a34
     name: vim-minimal
-    evr: 2:8.2.2637-23.el9_7.2
-    sourcerpm: vim-8.2.2637-23.el9_7.2.src.rpm
+    evr: 2:8.2.2637-23.el9_7.3
+    sourcerpm: vim-8.2.2637-23.el9_7.3.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/z/zip-3.0-35.el9.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
     size: 269791
@@ -4299,13 +4299,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-21.el9_7
     sourcerpm: util-linux-2.37.4-21.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/v/vim-minimal-8.2.2637-23.el9_7.2.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/v/vim-minimal-8.2.2637-23.el9_7.3.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 738651
-    checksum: sha256:41b154dd64a0dd66becc3554713a1cb285acb993225220932fafe93086629efd
+    size: 738812
+    checksum: sha256:871a5c804a5c0d57b79e750f8f2cea9520e64c764b052e4c2bb77c134c6bab2a
     name: vim-minimal
-    evr: 2:8.2.2637-23.el9_7.2
-    sourcerpm: vim-8.2.2637-23.el9_7.2.src.rpm
+    evr: 2:8.2.2637-23.el9_7.3
+    sourcerpm: vim-8.2.2637-23.el9_7.3.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/z/zip-3.0-35.el9.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
     size: 282944
@@ -6459,13 +6459,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-21.el9_7
     sourcerpm: util-linux-2.37.4-21.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/v/vim-minimal-8.2.2637-23.el9_7.2.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/v/vim-minimal-8.2.2637-23.el9_7.3.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
-    size: 682356
-    checksum: sha256:db5de60fbf4904a749d4b39bf05c72c706e129deffbabb8afa11ea0c4fb031c7
+    size: 682590
+    checksum: sha256:0545cd3b8db529b9ad242d5cc60a3aea24a08f4d5b1d8dc2222a269841a272f4
     name: vim-minimal
-    evr: 2:8.2.2637-23.el9_7.2
-    sourcerpm: vim-8.2.2637-23.el9_7.2.src.rpm
+    evr: 2:8.2.2637-23.el9_7.3
+    sourcerpm: vim-8.2.2637-23.el9_7.3.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/z/zip-3.0-35.el9.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
     size: 276776
@@ -8605,13 +8605,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-21.el9_7
     sourcerpm: util-linux-2.37.4-21.el9_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/v/vim-minimal-8.2.2637-23.el9_7.2.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/v/vim-minimal-8.2.2637-23.el9_7.3.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 693296
-    checksum: sha256:7a1ffe6240020c5dd70753ddfb07da01f569964e89e2091b39098eb43e41739f
+    size: 693461
+    checksum: sha256:6a66dbbb3b00bd04556e1673bbfa990e5ada1cdf5599eab91cc6e380c9674b68
     name: vim-minimal
-    evr: 2:8.2.2637-23.el9_7.2
-    sourcerpm: vim-8.2.2637-23.el9_7.2.src.rpm
+    evr: 2:8.2.2637-23.el9_7.3
+    sourcerpm: vim-8.2.2637-23.el9_7.3.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/z/zip-3.0-35.el9.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
     size: 276200
