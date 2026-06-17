@@ -279,7 +279,7 @@ LABEL com.redhat.component="volsync-container" \
       url="https://github.com/stolostron/volsync-operator-product-build" \
       release="0" \
       distribution-scope="public" \
-      cpe="cpe:/a:redhat:acm:2.17::el9"
+      cpe="cpe:/a:redhat:acm:5.0::el9"
 
 # License
 RUN mkdir licenses/

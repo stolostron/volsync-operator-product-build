@@ -2,17 +2,17 @@ apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
   annotations:
+    build.appstudio.openshift.io/build-nudge-files: "rhtap-buildargs.conf"
     build.appstudio.openshift.io/repo: https://github.com/stolostron/volsync-operator-product-build?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
-    build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
-    pipelinesascode.tekton.dev/cancel-in-progress: "true"
+    pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     # when adding filter for directory use "directory/***".pathChanged()
     # when adding filter for git submodule use "submodule".pathChanged()
-    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "release-0.16" &&
-      (".tekton/volsync-0-16-pull-request.yaml".pathChanged() ||
-      ".tekton/volsync-0-16-push.yaml".pathChanged() ||
+    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "release-0.17" &&
+      (".tekton/volsync-0-17-pull-request.yaml".pathChanged() ||
+      ".tekton/volsync-0-17-push.yaml".pathChanged() ||
       "Dockerfile.rhtap".pathChanged() ||
       "volsync".pathChanged() ||
       "rclone".pathChanged() ||
@@ -23,10 +23,10 @@ metadata:
       "rpms.lock.yaml".pathChanged())
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: volsync-0-16
-    appstudio.openshift.io/component: volsync-0-16
+    appstudio.openshift.io/application: volsync-0-17
+    appstudio.openshift.io/component: volsync-0-17
     pipelines.appstudio.openshift.io/type: build
-  name: volsync-0-16-on-pull-request
+  name: volsync-0-17-on-push
   namespace: volsync-tenant
 spec:
   params:
@@ -52,9 +52,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/volsync-tenant/volsync-0-16:on-pr-{{revision}}
-  - name: image-expires-after
-    value: 5d
+    value: quay.io/redhat-user-workloads/volsync-tenant/volsync-0-17:{{revision}}
   - name: build-platforms
     value:
     - linux/x86_64
@@ -63,6 +61,14 @@ spec:
     - linux/arm64
   - name: dockerfile
     value: Dockerfile.rhtap
+  - name: send-slack-notification
+    value: "true"
+  - name: konflux-application-name
+    value: "volsync-0-17"
+  - name: slack-webhook-url-secret-name
+    value: "slack-notification-secret"
+  - name: slack-webhook-url-secret-key
+    value: "backup-team"
   taskRunSpecs:
     # Override to increase memory limit on build-source-image, step: build
     # See: https://konflux.pages.redhat.com/docs/users/building/overriding-compute-resources.html
@@ -84,7 +90,7 @@ spec:
   timeouts:
     pipeline: "2h0m0s"
   taskRunTemplate:
-    serviceAccountName: build-pipeline-volsync-0-16
+    serviceAccountName: build-pipeline-volsync-0-17
   workspaces:
   - name: git-auth
     secret:
