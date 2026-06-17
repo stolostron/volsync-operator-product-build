@@ -39,9 +39,17 @@ podman run --rm \
 
 ## Submodule update rules
 
-- **volsync** updates require copying its `Dockerfile` to `drift-cache/volsync/Dockerfile.cached`. The build fails if these diverge.
-- **rclone, syncthing, diskrsync** must only be updated when the corresponding change is made in the volsync submodule. Update matching GIT hashes in `rhtap-buildargs.conf`.
+- **volsync** updates require copying its `Dockerfile` to `drift-cache/volsync/Dockerfile.cached`. The build fails if these diverge. You must also update `rhtap-buildargs.conf` — updating `Dockerfile.cached` alone passes the drift check but leaves the build using old versions.
+- **rclone, syncthing, diskrsync** must only be updated when the corresponding change is made in the volsync submodule. Update the submodule **before** updating `rhtap-buildargs.conf` — the build verifies the submodule HEAD matches `ARG_*_GIT_HASH` and will fail if the submodule is still at the old commit.
 - Submodules are not checked out on `main` — only on release branches via `git submodule update --init --recursive`.
+
+## CVE patches (release branches only)
+
+`CVE-patches/` contains patched `go.mod`/`go.sum` files for rclone and restic that get overlaid during the build via `patch_rclone.sh` / `patch_restic.sh`. When rclone or restic versions are updated, these patches must be regenerated: copy the `replace` directives into the submodule's `go.mod`, run `go mod tidy`, copy the result back to `CVE-patches/`, then restore the submodule. When a CVE fix lands upstream, make the patch script a NOOP and remove the patch deps directory — but also remove the corresponding prefetch entry from `.tekton/` pipeline files or prefetch will fail.
+
+## PR merge ordering
+
+Merge each PR's Konflux nudge PR before merging the next PR on the same branch. This ordering is per-branch — different release branches are independent.
 
 ## Version mapping
 
