@@ -81,13 +81,13 @@ arches:
     name: go-srpm-macros
     evr: 3.8.1-1.el9
     sourcerpm: go-rpm-macros-3.8.1-1.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-687.20.1.el9_8.aarch64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-687.25.1.el9_8.aarch64.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
-    size: 2847337
-    checksum: sha256:9d68e24b43ce1fa494c04aeda9bde9544d6947a8d9edaf6e0f4a6398b8f79cec
+    size: 2852969
+    checksum: sha256:f9349e3c5f05ac8d91f93226d22f0a8e145589debe342519ad0151a32056eb38
     name: kernel-headers
-    evr: 5.14.0-687.20.1.el9_8
-    sourcerpm: kernel-5.14.0-687.20.1.el9_8.src.rpm
+    evr: 5.14.0-687.25.1.el9_8
+    sourcerpm: kernel-5.14.0-687.25.1.el9_8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/appstream/os/Packages/k/kernel-srpm-macros-1.0-14.el9.noarch.rpm
     repoid: ubi-9-for-aarch64-appstream-rpms
     size: 14098
@@ -2139,13 +2139,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-25.el9
     sourcerpm: util-linux-2.37.4-25.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.6.aarch64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.10.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
-    size: 667875
-    checksum: sha256:bad51a9346b2188cab5f321bbf3639c2e917a3a1dea932160bfc86c2324866aa
+    size: 668730
+    checksum: sha256:c09b7568135282afe373535a8505437ede3cfe93dbad01b8ffa3c2ebd2642cd8
     name: vim-minimal
-    evr: 2:8.2.2637-26.el9_8.6
-    sourcerpm: vim-8.2.2637-26.el9_8.6.src.rpm
+    evr: 2:8.2.2637-26.el9_8.10
+    sourcerpm: vim-8.2.2637-26.el9_8.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/z/zip-3.0-35.el9.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
     size: 269791
@@ -2234,13 +2234,13 @@ arches:
     name: go-srpm-macros
     evr: 3.8.1-1.el9
     sourcerpm: go-rpm-macros-3.8.1-1.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-687.20.1.el9_8.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-687.25.1.el9_8.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
-    size: 2871145
-    checksum: sha256:f616fc5b97db6b1e654006fb85628aea7fd0f4733dce597b8a9451dc9e7ef8d4
+    size: 2876753
+    checksum: sha256:44c8c79658980f6cf3a73f8782ef6e0011fde55f33e0b8aeba6e022974f3961a
     name: kernel-headers
-    evr: 5.14.0-687.20.1.el9_8
-    sourcerpm: kernel-5.14.0-687.20.1.el9_8.src.rpm
+    evr: 5.14.0-687.25.1.el9_8
+    sourcerpm: kernel-5.14.0-687.25.1.el9_8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/appstream/os/Packages/k/kernel-srpm-macros-1.0-14.el9.noarch.rpm
     repoid: ubi-9-for-ppc64le-appstream-rpms
     size: 14098
@@ -4299,13 +4299,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-25.el9
     sourcerpm: util-linux-2.37.4-25.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.6.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.10.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 739176
-    checksum: sha256:93b17a6e4eff333fcd4fa57f176413304f76e174ae03a20067288e2f1520ef47
+    size: 739804
+    checksum: sha256:9d61f6b874ef5a8c00136d1281be48e130b3bed53bb0a139bbaf12d15ccb999e
     name: vim-minimal
-    evr: 2:8.2.2637-26.el9_8.6
-    sourcerpm: vim-8.2.2637-26.el9_8.6.src.rpm
+    evr: 2:8.2.2637-26.el9_8.10
+    sourcerpm: vim-8.2.2637-26.el9_8.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/z/zip-3.0-35.el9.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
     size: 282944
@@ -4401,13 +4401,13 @@ arches:
     name: go-srpm-macros
     evr: 3.8.1-1.el9
     sourcerpm: go-rpm-macros-3.8.1-1.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-687.20.1.el9_8.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-687.25.1.el9_8.s390x.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
-    size: 2877337
-    checksum: sha256:bc5acf3f42d54f2b8233065019354895bf450f55f53641beb084a2b95a544b09
+    size: 2882941
+    checksum: sha256:ea2778d21743495e692c9c566f3061d73d1387cc5b362d00da76c9b8db1918b0
     name: kernel-headers
-    evr: 5.14.0-687.20.1.el9_8
-    sourcerpm: kernel-5.14.0-687.20.1.el9_8.src.rpm
+    evr: 5.14.0-687.25.1.el9_8
+    sourcerpm: kernel-5.14.0-687.25.1.el9_8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/appstream/os/Packages/k/kernel-srpm-macros-1.0-14.el9.noarch.rpm
     repoid: ubi-9-for-s390x-appstream-rpms
     size: 14098
@@ -6459,13 +6459,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-25.el9
     sourcerpm: util-linux-2.37.4-25.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.6.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.10.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
-    size: 682795
-    checksum: sha256:0ae9c527b927eebfb36d9fa44db984ee9b00d7b04b91b349908330653854bc43
+    size: 683422
+    checksum: sha256:7efdae479dbf16e51a70fdf0372aba2f5fc0a0575afb2ac2abb53c32313bf733
     name: vim-minimal
-    evr: 2:8.2.2637-26.el9_8.6
-    sourcerpm: vim-8.2.2637-26.el9_8.6.src.rpm
+    evr: 2:8.2.2637-26.el9_8.10
+    sourcerpm: vim-8.2.2637-26.el9_8.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/z/zip-3.0-35.el9.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
     size: 276776
@@ -6561,13 +6561,13 @@ arches:
     name: go-srpm-macros
     evr: 3.8.1-1.el9
     sourcerpm: go-rpm-macros-3.8.1-1.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-687.20.1.el9_8.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-687.25.1.el9_8.x86_64.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
-    size: 2886649
-    checksum: sha256:15bc07a73a86aa6278eafa5d523c4de21c8a37f6178b94283845b1bfd929e7f7
+    size: 2892221
+    checksum: sha256:245c3f6d940b8a2f96882fbb9a756d25d7fb04270a6da88cb7461f6d6fa2518e
     name: kernel-headers
-    evr: 5.14.0-687.20.1.el9_8
-    sourcerpm: kernel-5.14.0-687.20.1.el9_8.src.rpm
+    evr: 5.14.0-687.25.1.el9_8
+    sourcerpm: kernel-5.14.0-687.25.1.el9_8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/os/Packages/k/kernel-srpm-macros-1.0-14.el9.noarch.rpm
     repoid: ubi-9-for-x86_64-appstream-rpms
     size: 14098
@@ -8598,13 +8598,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-25.el9
     sourcerpm: util-linux-2.37.4-25.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.6.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.10.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 695231
-    checksum: sha256:4d6e92aa7dc808fb646848b02488ab48d91ec05d98ac476fb33adcd4a655215b
+    size: 695776
+    checksum: sha256:b87c0dd1ad29ac5552db5b7a25f95b22f90dc438b13cd1027903d3307c6f3014
     name: vim-minimal
-    evr: 2:8.2.2637-26.el9_8.6
-    sourcerpm: vim-8.2.2637-26.el9_8.6.src.rpm
+    evr: 2:8.2.2637-26.el9_8.10
+    sourcerpm: vim-8.2.2637-26.el9_8.10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/z/zip-3.0-35.el9.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
     size: 276200
