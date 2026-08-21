@@ -21,4 +21,4 @@
 [submodule "yq"]
 	path = yq
 	url = https://github.com/mikefarah/yq
-	branch = v4.53.3
+	branch = v4.53.6
