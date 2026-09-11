@@ -249,13 +249,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-25.el9
     sourcerpm: util-linux-2.37.4-25.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.13.aarch64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.21.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
-    size: 669467
-    checksum: sha256:9d3db1ec2bbf2d4541892a3d8999cc329b1c4bbcb16c72f1003ce8726767edde
+    size: 670437
+    checksum: sha256:0ab745db26acfdd3ced59588a3d558508a9c12d25004e628f0ef716060e1176b
     name: vim-minimal
-    evr: 2:8.2.2637-26.el9_8.13
-    sourcerpm: vim-8.2.2637-26.el9_8.13.src.rpm
+    evr: 2:8.2.2637-26.el9_8.21
+    sourcerpm: vim-8.2.2637-26.el9_8.21.src.rpm
   source: []
   module_metadata: []
 - arch: ppc64le
@@ -512,13 +512,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-25.el9
     sourcerpm: util-linux-2.37.4-25.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.13.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.21.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 740434
-    checksum: sha256:eaf0eff0a477da7667554af60dc67285bd335969172970b1a3f9f1cf53fb0270
+    size: 741256
+    checksum: sha256:290153849b4ad8d7a1714bd9f7bfc4d46c49ffe451c58cd8fc89d1d6d967bf63
     name: vim-minimal
-    evr: 2:8.2.2637-26.el9_8.13
-    sourcerpm: vim-8.2.2637-26.el9_8.13.src.rpm
+    evr: 2:8.2.2637-26.el9_8.21
+    sourcerpm: vim-8.2.2637-26.el9_8.21.src.rpm
   source: []
   module_metadata: []
 - arch: s390x
@@ -768,13 +768,13 @@ arches:
     name: util-linux-core
     evr: 2.37.4-25.el9
     sourcerpm: util-linux-2.37.4-25.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.13.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.21.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
-    size: 684060
-    checksum: sha256:cfdda25de39fba592f4086e20727003b9d6f8a6c0f055abb67f870e99441be80
+    size: 685406
+    checksum: sha256:3026359d74bd6fc7f8ea3f2457ae131ab424df4f7a371fcd8281490b126a18d1
     name: vim-minimal
-    evr: 2:8.2.2637-26.el9_8.13
-    sourcerpm: vim-8.2.2637-26.el9_8.13.src.rpm
+    evr: 2:8.2.2637-26.el9_8.21
+    sourcerpm: vim-8.2.2637-26.el9_8.21.src.rpm
   source: []
   module_metadata: []
 - arch: x86_64
@@ -1024,12 +1024,12 @@ arches:
     name: util-linux-core
     evr: 2.37.4-25.el9
     sourcerpm: util-linux-2.37.4-25.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.13.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/v/vim-minimal-8.2.2637-26.el9_8.21.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 696394
-    checksum: sha256:e0ce0717738af870181a9f42589ea54e739a31a96e85e7feb8335e48abba56fd
+    size: 697543
+    checksum: sha256:645d5503a28e7e0e3ee93cd91fe1b0a57c37211daa75fdd60fa4193a4fe8eaa4
     name: vim-minimal
-    evr: 2:8.2.2637-26.el9_8.13
-    sourcerpm: vim-8.2.2637-26.el9_8.13.src.rpm
+    evr: 2:8.2.2637-26.el9_8.21
+    sourcerpm: vim-8.2.2637-26.el9_8.21.src.rpm
   source: []
   module_metadata: []
