@@ -22,6 +22,9 @@ ARG ARG_SYNCTHING_GIT_HASH
 ARG ARG_DISKRSYNC_VERSION
 ARG ARG_DISKRSYNC_GIT_HASH
 
+ARG ARG_VERSION
+ENV VERSION="${ARG_VERSION}"
+
 WORKDIR /src
 
 # Copy everything as git info for submodules is in the parent
@@ -38,6 +41,17 @@ RUN /bin/bash -c "[[ $(git rev-list -n 1 HEAD) == ${ARG_SYNCTHING_GIT_HASH} ]]"
 # Make sure we have the correct diskrsync release
 WORKDIR /src/diskrsync
 RUN /bin/bash -c "[[ $(git rev-list -n 1 HEAD) == ${ARG_DISKRSYNC_GIT_HASH} ]]"
+
+# Check the version we're trying to build matches volsync
+WORKDIR /src
+RUN vs_version=$(grep "^VERSION :=" volsync/version.mk) && \
+     vs_version="${vs_version##* }" && \
+     echo "VolSync vs_version: ${vs_version}, VERSION: ${VERSION}" && \
+
+     if [ "${vs_version}" != "${VERSION}" ]; then \
+       echo "ERROR: version of volsync ${vs_version} does not match expected version: ${VERSION}"; \
+       exit 2; \
+     fi
 
 # Get VolSync git hash and save to file
 WORKDIR /src/volsync
