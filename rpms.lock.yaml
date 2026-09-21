@@ -214,13 +214,6 @@ arches:
     name: systemd
     evr: 252-67.el9_8.6
     sourcerpm: systemd-252-67.el9_8.6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/s/systemd-libs-252-67.el9_8.6.aarch64.rpm
-    repoid: ubi-9-for-aarch64-baseos-rpms
-    size: 629233
-    checksum: sha256:55e58c413ee69f19a69ba25905f96343076e21abe54cdff51f0d80e48be06769
-    name: systemd-libs
-    evr: 252-67.el9_8.6
-    sourcerpm: systemd-252-67.el9_8.6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/s/systemd-pam-252-67.el9_8.6.aarch64.rpm
     repoid: ubi-9-for-aarch64-baseos-rpms
     size: 247880
@@ -484,13 +477,6 @@ arches:
     name: systemd
     evr: 252-67.el9_8.6
     sourcerpm: systemd-252-67.el9_8.6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/s/systemd-libs-252-67.el9_8.6.ppc64le.rpm
-    repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 694605
-    checksum: sha256:8779364a6687523779cc8f9cfa8a5e0fc809d390e5c6d9e399705a754531c79f
-    name: systemd-libs
-    evr: 252-67.el9_8.6
-    sourcerpm: systemd-252-67.el9_8.6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/s/systemd-pam-252-67.el9_8.6.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
     size: 276291
@@ -747,13 +733,6 @@ arches:
     name: systemd
     evr: 252-67.el9_8.6
     sourcerpm: systemd-252-67.el9_8.6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/s/systemd-libs-252-67.el9_8.6.s390x.rpm
-    repoid: ubi-9-for-s390x-baseos-rpms
-    size: 622880
-    checksum: sha256:d851aa92c51f9432358cdb2e6a26b503f54a06154efc1415608a674e44a5ee85
-    name: systemd-libs
-    evr: 252-67.el9_8.6
-    sourcerpm: systemd-252-67.el9_8.6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/s/systemd-pam-252-67.el9_8.6.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
     size: 247723
@@ -1008,13 +987,6 @@ arches:
     size: 4383786
     checksum: sha256:025ffe42235a9d4d40138bab7511995392d2a50ba6912be97b47e634b15823b8
     name: systemd
-    evr: 252-67.el9_8.6
-    sourcerpm: systemd-252-67.el9_8.6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/s/systemd-libs-252-67.el9_8.6.x86_64.rpm
-    repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 662007
-    checksum: sha256:d491d7375ed820bf4fa0d5f6d80a6f1a72cfa6ff31e79dabf9288246061cf88e
-    name: systemd-libs
     evr: 252-67.el9_8.6
     sourcerpm: systemd-252-67.el9_8.6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/s/systemd-pam-252-67.el9_8.6.x86_64.rpm
