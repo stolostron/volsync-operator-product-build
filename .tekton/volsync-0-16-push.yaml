@@ -44,8 +44,9 @@ spec:
     - {"type": "gomod", "path": "CVE-patches/restic_patch_deps/restic"}
     - {"type": "gomod", "path": "CVE-patches/restic_patch_deps/minio-go"}
     - {"type": "rpm", "path": "."}
-  - name: build-args-file
-    value: "rhtap-buildargs.conf"
+  - name: build-args-files
+    value:
+      - "rhtap-buildargs.conf"
   - name: build-source-image
     value: "true"
   - name: git-url
