@@ -31,8 +31,9 @@ spec:
     value:
     - {"type": "rpm", "path": "."}
     - {"type": "gomod", "path": "yq/"}
-  - name: build-args-file
-    value: "rhtap-buildargs.conf"
+  - name: build-args-files
+    value:
+      - "rhtap-buildargs.conf"
   - name: build-source-image
     value: "true"
   - name: git-url
