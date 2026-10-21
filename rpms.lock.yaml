@@ -393,27 +393,27 @@ arches:
     name: libutempter
     evr: 1.2.1-6.el9
     sourcerpm: libutempter-1.2.1-6.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/o/openssh-9.9p1-12.el9_8.ppc64le.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/o/openssh-9.9p1-13.el9_8.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 460307
-    checksum: sha256:e0671ce5fb0a34dd1a993a639008ea3800f40f4d5016de5494a9d4aafe1db20d
+    size: 460655
+    checksum: sha256:b13df6b6da8bebe1cc181db60217cb03aa25164632e5d355e4483d5cd0c1e2c5
     name: openssh
-    evr: 9.9p1-12.el9_8
-    sourcerpm: openssh-9.9p1-12.el9_8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/o/openssh-clients-9.9p1-12.el9_8.ppc64le.rpm
+    evr: 9.9p1-13.el9_8
+    sourcerpm: openssh-9.9p1-13.el9_8.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/o/openssh-clients-9.9p1-13.el9_8.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 836559
-    checksum: sha256:219261e16080f48c05d8286fe05f9e13c338694a9b78a289c582f9fea09e944e
+    size: 836958
+    checksum: sha256:e05a96fccc8d47f3a583ccdea13e0b535bd87ea20a2801b340a7f569046dc1ba
     name: openssh-clients
-    evr: 9.9p1-12.el9_8
-    sourcerpm: openssh-9.9p1-12.el9_8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/o/openssh-server-9.9p1-12.el9_8.ppc64le.rpm
+    evr: 9.9p1-13.el9_8
+    sourcerpm: openssh-9.9p1-13.el9_8.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/o/openssh-server-9.9p1-13.el9_8.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 588897
-    checksum: sha256:c2dcb0d883771f49ebfb9e73342abe57efda48f76fe2dedba3a50b548a93ef64
+    size: 589511
+    checksum: sha256:8fe284e5c858e18c7105ae69be2829bd7fba488040b7b425667a41ce5eb06edc
     name: openssh-server
-    evr: 9.9p1-12.el9_8
-    sourcerpm: openssh-9.9p1-12.el9_8.src.rpm
+    evr: 9.9p1-13.el9_8
+    sourcerpm: openssh-9.9p1-13.el9_8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/o/openssl-3.5.8-2.el9_8.ppc64le.rpm
     repoid: ubi-9-for-ppc64le-baseos-rpms
     size: 1571604
@@ -649,27 +649,27 @@ arches:
     name: libutempter
     evr: 1.2.1-6.el9
     sourcerpm: libutempter-1.2.1-6.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/o/openssh-9.9p1-12.el9_8.s390x.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/o/openssh-9.9p1-13.el9_8.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
-    size: 429111
-    checksum: sha256:916b826d088fbb62d84d5a70e1d2e289602823f467874f89b30f83766324e301
+    size: 429589
+    checksum: sha256:834908a231579554c65a8c53e04a2ef2a687a377e1d58cd2c01ce6911dc7bd2b
     name: openssh
-    evr: 9.9p1-12.el9_8
-    sourcerpm: openssh-9.9p1-12.el9_8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/o/openssh-clients-9.9p1-12.el9_8.s390x.rpm
+    evr: 9.9p1-13.el9_8
+    sourcerpm: openssh-9.9p1-13.el9_8.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/o/openssh-clients-9.9p1-13.el9_8.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
-    size: 749080
-    checksum: sha256:324db99fb8fa4c32ab3803ea3559d34c2b9b44c99a6a943cb7b962a35e680607
+    size: 749311
+    checksum: sha256:23d5ae02e0af598372027da3ac463f18f3ab0e9e947ca73218985efc7d385354
     name: openssh-clients
-    evr: 9.9p1-12.el9_8
-    sourcerpm: openssh-9.9p1-12.el9_8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/o/openssh-server-9.9p1-12.el9_8.s390x.rpm
+    evr: 9.9p1-13.el9_8
+    sourcerpm: openssh-9.9p1-13.el9_8.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/o/openssh-server-9.9p1-13.el9_8.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
-    size: 529092
-    checksum: sha256:46722a7e1f35d637cf22d366f9a17d8c4b6444645b9e48863fbe092cd6c66812
+    size: 529409
+    checksum: sha256:467a4955a1cab0debe69b22fa8ed46dd02e453b0c1fd9c7a1a41e2804f1b0227
     name: openssh-server
-    evr: 9.9p1-12.el9_8
-    sourcerpm: openssh-9.9p1-12.el9_8.src.rpm
+    evr: 9.9p1-13.el9_8
+    sourcerpm: openssh-9.9p1-13.el9_8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/o/openssl-3.5.8-2.el9_8.s390x.rpm
     repoid: ubi-9-for-s390x-baseos-rpms
     size: 1554288
@@ -905,27 +905,27 @@ arches:
     name: libutempter
     evr: 1.2.1-6.el9
     sourcerpm: libutempter-1.2.1-6.el9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/o/openssh-9.9p1-12.el9_8.x86_64.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/o/openssh-9.9p1-13.el9_8.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 443141
-    checksum: sha256:12db3094d78ed82bd7edc6a7cdd2cbf5198da695e293b47b5d00c31ac142aeb7
+    size: 443578
+    checksum: sha256:f3a0c1bf130cf8335db06a3b13793b4f590208e5a3f20a1a3391eb8f0162d06a
     name: openssh
-    evr: 9.9p1-12.el9_8
-    sourcerpm: openssh-9.9p1-12.el9_8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/o/openssh-clients-9.9p1-12.el9_8.x86_64.rpm
+    evr: 9.9p1-13.el9_8
+    sourcerpm: openssh-9.9p1-13.el9_8.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/o/openssh-clients-9.9p1-13.el9_8.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 800429
-    checksum: sha256:a4307b914ec45f69fea0e17b593ae61597db3e2796ce01a8809c55173f30c121
+    size: 800352
+    checksum: sha256:cea2dde9a34a69071f65e3c623a3ed041320520d34d0edb80ceb74316d2f3ee1
     name: openssh-clients
-    evr: 9.9p1-12.el9_8
-    sourcerpm: openssh-9.9p1-12.el9_8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/o/openssh-server-9.9p1-12.el9_8.x86_64.rpm
+    evr: 9.9p1-13.el9_8
+    sourcerpm: openssh-9.9p1-13.el9_8.src.rpm
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/o/openssh-server-9.9p1-13.el9_8.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 567075
-    checksum: sha256:004e9c9b40c5dcae2cb281896113046a785c651664e6de6f0bee14b3fbda4621
+    size: 567559
+    checksum: sha256:98b9fafb13d6482639a5cecc381166fa22484d770b65ed12f29159cce5e0d426
     name: openssh-server
-    evr: 9.9p1-12.el9_8
-    sourcerpm: openssh-9.9p1-12.el9_8.src.rpm
+    evr: 9.9p1-13.el9_8
+    sourcerpm: openssh-9.9p1-13.el9_8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/o/openssl-3.5.8-2.el9_8.x86_64.rpm
     repoid: ubi-9-for-x86_64-baseos-rpms
     size: 1570074
