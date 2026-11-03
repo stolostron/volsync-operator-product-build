@@ -2,7 +2,7 @@
 
 ######################################################################
 # Check that submodules for movers are at the correct versions
-FROM registry.redhat.io/openshift/golang-builder:golang-builder-v1.26-rhel9@sha256:cdb2b291b842dc836be849d735d47a80c13a910bdd61a95933167bbaff6b8bc3 AS dep-checker-and-golang-builder
+FROM registry.redhat.io/openshift/golang-builder:golang-builder-v1.26-rhel9@sha256:78bd08b0aa5520dec6f388f5d17c5da6e44ee9b8f826aebc8f3264738e9532e2 AS dep-checker-and-golang-builder
 
 WORKDIR /tmp
 
@@ -182,7 +182,7 @@ RUN nm diskrsync-tcp/diskrsync-tcp | grep -q "goboringcrypto\|golang-fips"
 
 ######################################################################
 # Final container
-FROM registry.redhat.io/ubi9/ubi-minimal-pqc:latest@sha256:d0fdfb1401ee754872f60c2527563671c16112080e5254139133908178700911
+FROM registry.redhat.io/ubi9/ubi-minimal-pqc:latest@sha256:c7fdcf2617a608d07f95fa01d8936fc8bf898096a60e5ebc432aae8ead50ea6c
 WORKDIR /
 
 RUN microdnf --refresh update -y && \
