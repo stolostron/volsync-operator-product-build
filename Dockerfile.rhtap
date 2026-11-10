@@ -182,7 +182,7 @@ RUN nm diskrsync-tcp/diskrsync-tcp | grep -q "goboringcrypto\|golang-fips"
 
 ######################################################################
 # Final container
-FROM registry.redhat.io/ubi9/ubi-minimal-pqc:latest@sha256:ddaf8f8a845a39f7ab7d7caaed1bed0b9063eab6e22e52beece0924e91666c86
+FROM registry.redhat.io/ubi9/ubi-minimal-pqc:latest@sha256:d638f3b49b79575329aacdae2739f954effe2467c12147711e73445c4fc97819
 WORKDIR /
 
 RUN microdnf --refresh update -y && \
